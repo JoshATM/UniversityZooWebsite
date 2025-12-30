@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 import Header from "./Header";
 import CookieConsent from "./CookieConsent";
-// import Footer from './Footer'
+import Footer from "./Footer";
 
 {
   /* Displays anything in DisplayAll to display throughout the server */
@@ -12,18 +12,10 @@ import CookieConsent from "./CookieConsent";
 export default function GlobalComponents() {
   return (
     <>
-      <DisplayAll />
+      <Header />
+      <CookieConsent />
       <Outlet />
+      <Footer />
     </>
   );
 }
-
-const DisplayAll = () => {
-  return (
-    <>
-      <Header />
-      <CookieConsent />
-      {/* <Footer/> */}
-    </>
-  );
-};

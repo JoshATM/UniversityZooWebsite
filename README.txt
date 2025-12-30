@@ -50,12 +50,15 @@ That should be the frontend and run on port 5173 but it would say specifically w
 Step 7:
 Open up XAMPP and launch (click on Start) Apache and MySQL.
 If MySQL fail, it may be because you closed the app without closing the port. If this happens close the port by running the command (ON WINDOWS, if your on any other operating system I cannot help you, search up how to close a port on YOUR_OPERATING_SYSTEM). If this doesn't happen then continue to step 8.
-netstat -ano | findstr 3306
-3306 is the port that MySQL loads on
-You will then see a bunch of 4 digit numbers, then run the command
-taskkill /PID YOUR_PID_NUMBER_HERE /F
-where YOUR_PID_NUMBER_HERE is the number that you see
 
+netstat -ano | findstr 3306
+
+3306 is the port that MySQL loads on
+You will then see a bunch of 4 digit numbers, then run the command:
+
+taskkill /PID YOUR_PID_NUMBER_HERE /F
+
+where YOUR_PID_NUMBER_HERE is the number that you see
 If you run into any other errors, view the Logs to see what is wrong.
 
 Step 8:

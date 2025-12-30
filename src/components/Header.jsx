@@ -27,8 +27,8 @@ export default function Header() {
       />
       <LinksContainer>
         <LinkText onClick={() => navigate("/tickets")}>Tickets</LinkText>
-        <LinkText onClick={() => navigate("/hotel")}>Hotels</LinkText>
-        <LinkText onClick={() => navigate("/materials")}>Materials</LinkText>
+        <LinkText href="#">Hotels</LinkText>
+        <LinkText href="#">Materials</LinkText>
         {
           // If Logged In displays the Sign Out Button, if not then displays Login
           loggedIn ? (
@@ -102,11 +102,11 @@ export default function Header() {
             Tickets
           </SBLinkText>
           <InvertedLine lineTop={125 * 2 + "px"} />
-          <SBLinkText onClick={() => navigate("/hotel", toggleSidebar())}>
+          <SBLinkText href="#" onClick={toggleSidebar}>
             Hotels
           </SBLinkText>
           <InvertedLine lineTop={125 * 3 + "px"} />
-          <SBLinkText onClick={() => navigate("/materials", toggleSidebar())}>
+          <SBLinkText href="#" onClick={toggleSidebar}>
             Materials
           </SBLinkText>
           <InvertedLine lineTop={125 * 3 + "px"} />

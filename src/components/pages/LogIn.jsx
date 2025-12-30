@@ -75,7 +75,6 @@ export default function LogIn() {
           </SignUpButton>
         </StyledLogInContainer>
       </StyledContainer>
-      <Line lineTop="948px" />
     </>
   );
 }
@@ -88,7 +87,7 @@ const StyledContainer = styled.div`
 const StyledImage = styled.img`
   object-fit: cover;
   max-width: 50%;
-  min-height: 81.5vh;
+  min-height: 1130px;
   height: -webkit-fill-available;
   @media (max-width: 750px) {
     display: none;
