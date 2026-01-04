@@ -3,5 +3,3 @@
 ## Apps Needed:
 
 ### XAMPP - Database
-
-# ExamZooWebsite
